@@ -1,0 +1,232 @@
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right: 20px;
+}
+
+/* .header-section {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    overflow: hidden;
+    position: absolute;
+} */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    margin-bottom: 5px;
+    left: 0;
+    top: 0;
+    right: 0;
+    /* overflow: hidden; */
+    
+   
+
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+
+}
+
+.hameburger-menu {
+    height: 24px;
+    width: 24px;
+    margin-right: 24px;
+    margin-left: 22px;
+}
+
+.youtube-div {
+    position: relative;
+}
+
+.youtube-logo {
+    width: 90px;
+    height: 22px;
+
+}
+
+.text {
+    position: absolute;
+    top: -6px;
+    right: -12px;
+    font-size: 10px;
+    font-weight: 500px;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 30px;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color: gray;
+    box-shadow: 0px 0px 4px gray;
+    border: none;
+    width: 100%;
+    max-width: 600;
+    padding-left: 9px;
+
+
+
+
+
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    width: 34px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    padding: 6px 30px 6px 30px;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 0px 0px 4px gray;
+    cursor: pointer;
+
+}
+
+.search-img {
+    height: 22px;
+    width: 22px;
+}
+
+.voice-search {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 38px;
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+    border-color: gray;
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+
+
+.right-section {
+    display: flex;
+    width: 160px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+    overflow: hidden ;
+
+}
+
+.upload-container {
+    height: 27px;
+    margin-right: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+
+
+}
+
+.upload {
+    width: 46px;
+    height: 26px;
+    
+
+
+}
+
+.notifications {
+    width: 26px;
+    height: 26px;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+
+.notification-count {
+    position: absolute;
+    top: -3px;
+    right: 4px;
+    background-color: rgb(202, 6, 6);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family: roboto, arial;
+    padding: 3px 5px 2px 4px;
+    cursor: pointer;
+
+}
+
+.notification-container {
+    position: relative;
+
+}
+
+.my-profile {
+    object-fit: cover;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 15px;
+
+}
+
+.search-button,
+.voice-search,
+.upload-container,
+.notification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.search-button .tooltip,
+.voice-search .tooltip,
+.upload-container .tooltip,
+.notification-container .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    opacity: 0;
+    word-wrap: none;
+    transition: opacity 0.15s;
+    padding: 8px 6px 6px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 90px;
+    white-space: nowrap;
+}
+
+
+
+.search-button:hover .tooltip,
+.voice-search:hover .tooltip,
+.upload-container:hover .tooltip,
+.notification-container:hover .tooltip {
+    opacity: 1;
+
+}
