@@ -38,9 +38,6 @@
     
 
 }
-.sidebar:hover img {
-    transform: rotate(360deg);
-}
 
 .sidebar-text {
     font-size: 10px;
