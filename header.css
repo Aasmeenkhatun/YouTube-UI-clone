@@ -219,6 +219,7 @@ body {
     border-radius: 5px;
     margin-top: 90px;
     white-space: nowrap;
+    pointer-event: none;
 }
 
 
